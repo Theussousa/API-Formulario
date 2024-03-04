@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+    <h1>Formulário de Inscrição</h1>
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="evento">Evento:</label>
+        <select id="evento" name="evento" required>
+            <option value="">Selecione um evento</option>
+            <option value="1">Evento Semear1</option>
+            <option value="2">Evento Semear2</option>
+            <option value="3">Evento Semear3</option>
+        </select><br>
+
+        <button type="submit">Enviar Inscrição</button>
+
+    </form>
+
+    <div id="dados-evento" style="display: none;">
+        <h2>Dados do Evento</h2>
+        <p>Nome do Evento: <span id="nome-evento"></span></p>
+        <p>Data: <span id="data-evento"></span></p>
+        <p>Hora: <span id="hora-evento"></span></p>
+        <p>Local: <span id="local-evento"></span></p>
+        <p>Descrição: <span id="descricao-evento"></span></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>    
